@@ -1467,9 +1467,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Here is a simple example of a game using Lightship Maps. Collect resources
-    from trees in the nearby Park on the Map. Create structures and build a Stronghold
-    to win.
+  m_text: poop
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 47382c7fa89f14e778db36f61190547b, type: 2}
   m_sharedMaterial: {fileID: 4291245844200389477, guid: 47382c7fa89f14e778db36f61190547b,
@@ -7551,9 +7549,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4679712108560714345, guid: 652c0f1d2f3184a959f719dbc90057a4,
         type: 3}
+      propertyPath: _startAtDefaultLocation
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4679712108560714345, guid: 652c0f1d2f3184a959f719dbc90057a4,
+        type: 3}
       propertyPath: '_mapLayers.Array.data[0]'
       value: 
       objectReference: {fileID: 1157190691}
+    - target: {fileID: 4679712108560714345, guid: 652c0f1d2f3184a959f719dbc90057a4,
+        type: 3}
+      propertyPath: _defaultLocation._latitude
+      value: 36.402637
+      objectReference: {fileID: 0}
+    - target: {fileID: 4679712108560714345, guid: 652c0f1d2f3184a959f719dbc90057a4,
+        type: 3}
+      propertyPath: _defaultLocation._longitude
+      value: -93.736
+      objectReference: {fileID: 0}
     - target: {fileID: 4679712108560714347, guid: 652c0f1d2f3184a959f719dbc90057a4,
         type: 3}
       propertyPath: m_RootOrder
@@ -9215,6 +9228,20 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 3565403182168102744}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1736672386901606273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1736672386901606271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7435c8500e1da1d45ad71c881ddee7a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  healthBar: {fileID: 0}
 --- !u!1001 &3565403182168102744
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9298,10 +9325,19 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 2982294553187493927, guid: b788caf524c30444f85f967a8858cbd5,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2982294553187493927, guid: b788caf524c30444f85f967a8858cbd5,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1736672386901606273}
   m_SourcePrefab: {fileID: 100100000, guid: b788caf524c30444f85f967a8858cbd5, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
